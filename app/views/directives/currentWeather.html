@@ -1,0 +1,12 @@
+<div id="currentTemperature" class="text-left">
+    <span id="currentTemp">Now: {{response.main.temp | number:0 }}&deg;C</span><br/>
+    <span>Today: {{date|date:'dd-MM-yyyy'}}</span><br/>
+    <span id="minTemp">Min: {{response.main.temp_min | number:0}}&deg;C</span><br/>
+    <span id="maxTemp">Max: {{response.main.temp_max | number:0}}&deg;C</span><br/>
+    <span id="humidity">Humidity: {{response.main.humidity}}</span><br/>
+    <span id="weather">Weather: {{response.weather[0].main}}</span><br/>
+</div>
+<div id="currentLocationImage">
+    <span>{{currentCity}}</span>
+   <img src="../../images/yeoman.png"/>
+</div>
