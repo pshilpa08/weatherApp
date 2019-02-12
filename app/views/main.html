@@ -1,0 +1,24 @@
+<div class="main-container">
+    <div id="header">
+        <label for="cityname">Enter City Name</label>
+        <input type="text" name="cityname" id="cityname" ng-model="cityname"/>
+        <input type="button" name="searchWeather" id="searchWeather" value="Search" ng-click="loadAllWeather()"/>
+    </div>
+
+    <div id="results" class="row-fluid">
+       
+        <div class="well" id="current">
+            <current-weather></current-weather>
+        </div><!--End of #current-->
+    
+      <div class="further row">
+        <further-weather></further-weather>
+      </div> <!--End of further row-->
+
+      <div class="furherDetails row" ng-show="showFurtherMore">
+          <further-details></further-details>
+      </div>
+
+  </div><!--End of #results-->
+     
+</div><!--End of .main-container-->

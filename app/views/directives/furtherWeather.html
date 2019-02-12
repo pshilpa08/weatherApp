@@ -1,0 +1,6 @@
+<div ng-repeat="entry in forecast.list">
+    <div class="col-xs-6 col-sm-3 well well-sm future-forecast" ng-if="entry.dt_txt.indexOf('00:00:00')>-1" ng-click="loadFurtherDetails($index)">
+        <span data-toggle="collapse">{{entry.dt_txt | limitTo:10 | date:'dd-MM-yyyy'}}</span><br/>
+        <span data-toggle="collapse">{{entry.main.temp | number:0}}&deg;C</span>
+    </div> <!--End of div for col-xs-6 col-sm-3 well well-sm-->
+</div>  <!--End of div for repeat-->

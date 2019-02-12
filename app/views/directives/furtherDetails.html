@@ -1,0 +1,34 @@
+<div class="table-responsive" id="futureMoreDetail">
+    <div class="panel-body">
+        <table class="table-bordered" id="detailFuture">
+            <thead>
+            <th>00:00</th>
+            <th>03:00</th>
+            <th>06:00</th>
+            <th>09:00</th>
+            <th>12:00</th>
+            <th>15:00</th>
+            <th>18:00</th>
+            <th>21:00</th>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td ng-repeat="detail in futureMoreDetail">
+                    <span id="minForecastTemp">Min: {{detail.main.temp_min | number:0}}&deg;C</span><br/>
+                    <span id="maxForecastTemp">Max: {{detail.main.temp_max | number:0}}&deg;C</span><br/>
+                    <span id="humidityForecast">Humidity: {{detail.main.humidity}}</span><br/>
+                    <span id="weatherForecast">Weather: {{detail.weather[0].main}}</span><br/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!--      <p ng-repeat="detail in futherMoreDetail">
+                   <span id="minTemp">Min: {{detail.main.temp_min | number:0}}&deg;C</span><br/>
+                   <span id="maxTemp">Max: {{detail.main.temp_max | number:0}}&deg;C</span><br/>
+                   <span id="humidity">Humidity: {{detail.main.humidity}}</span><br/>
+                   <span id="weather">Weather: {{detail.weather[0].main}}</span><br/>
+             </p> -->
+    </div><!--End of panel-body-->
+</div><!--End of #current-->
