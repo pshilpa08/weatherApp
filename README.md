@@ -1,9 +1,13 @@
 # weatherApp
+
 Weather app written in Angular 1.
 This project fetches data from openweathermap.org and lets user search on location.
 App provides current weather along with further 5 days.
 
-#Prerequisite
+# Techonologies Used
+  Angular 1.x, Javascript, HTML, Css3, Bootstrap
+  
+# Prerequisite
 Npm and bower needs to be installed
 
 ## Build & development
@@ -15,3 +19,4 @@ Run `grunt` for building and `grunt serve` for preview.
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
+=======
